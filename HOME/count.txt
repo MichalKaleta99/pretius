@@ -1,3 +1,0 @@
-Total Files Transferred: 5
-Files Transferred to DEV: 0
-Files Transferred to TEST: 5

@@ -33,6 +33,7 @@ public class JarFileSegregator implements FileSegregator {
                 : Paths.get(testDirectory, file.getName());
         try {
             Files.createDirectories(target.getParent());
+            System.out.println(target.getParent() + " directory created");
             Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
             System.out.println("Moved file " + file.getName() + " to " + target.getParent().getFileName());
             incrementCount(target.getParent().getFileName().toString());

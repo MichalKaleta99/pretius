@@ -23,6 +23,7 @@ public class XmlFileSegregator implements FileSegregator {
         Path source = file.toPath();
         Path target = Paths.get("DEV", file.getName());
         try {
+            System.out.println(target.getParent() + " directory created");
             Files.createDirectories(target.getParent());
             Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
             devCount++;

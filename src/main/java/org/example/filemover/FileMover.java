@@ -19,6 +19,7 @@ public class FileMover {
         while (true) {
             File homeDirectory = new File(homePath);
             if (!homeDirectory.exists()) {
+                System.out.println(homeDirectory.getName() + " directory created");
                 homeDirectory.mkdirs();
             }
             File[] files = homeDirectory.listFiles();
