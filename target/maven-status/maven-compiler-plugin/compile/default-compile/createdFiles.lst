@@ -1,0 +1,5 @@
+org\example\segregator\JarFileSegregator.class
+org\example\segregator\FileSegregator.class
+org\example\segregator\XmlFileSegregator.class
+org\example\SegregateFiles.class
+org\example\filemover\FileMover.class
